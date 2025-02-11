@@ -7,7 +7,7 @@ def hola_mundo():
     return 'Hola mundo'
 
 #Runta /alumnos
-@app.route('&alumnos')
+@app.route('/alumnos')
 def getAlumnos():
     return 'Aqui van los alumnos'
 if __name__ == '__main__':
