@@ -1,9 +1,14 @@
 from flask import Flask
 #crear isinstancia
-app = Flask(_name_)
+app = Flask(__name__)
 #ruta raiz
 @app.route('/')
 def hola_mundo():
     return 'Hola mundo'
-if _name_ == '_main_':
+
+#Runta /alumnos
+@app.route('&alumnos')
+def getAlumnos():
+    return 'Aqui van los alumnos'
+if __name__ == '__main__':
     app.run(debug=True)
